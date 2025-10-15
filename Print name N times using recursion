@@ -1,0 +1,5 @@
+def printname(n):
+    if n <= 0:
+        return
+    print('vijeta')
+    printname(n-1)
