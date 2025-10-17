@@ -1,0 +1,9 @@
+class Solution:
+    def largestElement(self, nums):
+        lar_num = nums[0]
+
+        for i in range(1,len(nums)):
+            if nums[i] > lar_num:
+                lar_num = nums[i]
+
+        return lar_num 
