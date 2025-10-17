@@ -1,0 +1,14 @@
+def secondLargestElement(nums):
+    s_num = 0
+    f_num = nums[0]
+    for i in range(1, len(nums)):
+    
+        if nums[i]> f_num:
+            s_num = f_num
+            f_num = nums[i]
+        if nums[i] < f_num and nums[i] > s_num:
+            s_num = nums[i]
+        if nums[i] == f_num:
+            s_num = -1        
+
+    return s_num
